@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  #star {
+    background-image: url(../image/kai-pilger-Ef6iL87-vOA-unsplash.jpg);
+    background-size: cover;
+  }
+  #sun {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(#f5c313, #ec7c08);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    box-shadow: 0 0 45px 0.1rem #f5c91a;
+    animation: sunlight 3s infinite alternate;
+  }
+  #earthorbit {
+    width: 500px;
+    height: 500px;
+    // border: 1px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    animation: spin 30s linear infinite;
+    #earth {
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      top: 50%;
+      margin-top: -37.5px;
+      margin-left: -37.5px;
+      animation: spin 5s linear infinite;
+    }
+    #moonorbit {
+      width: 125px;
+      height: 125px;
+      // border: 1px solid red;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      margin-top: -62.5px;
+      margin-left: -62.5px;
+      animation: spin 2s linear infinite;
+
+      #moon {
+        background: radial-gradient(#ddd, #888);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: -10px;
+        animation: spin 3s linear infinite;
+        animation: moonlight 3s infinite alternate;
+      }
+    }
+  }
+}
+
+@keyframes sunlight {
+  from {
+    box-shadow: 0 0 45px #f5c91a;
+  }
+  to {
+    box-shadow: 0 0 90px #f5c91a;
+  }
+}
+
+@keyframes moonlight {
+  from {
+    box-shadow: 0 0 45px #888;
+  }
+  to {
+    box-shadow: 0 0 900px #888;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+body #star {
+  background-image: url(../image/kai-pilger-Ef6iL87-vOA-unsplash.jpg);
+  background-size: cover;
+}
+
+body #sun {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(#f5c313, #ec7c08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 45px 0.1rem #f5c91a;
+          box-shadow: 0 0 45px 0.1rem #f5c91a;
+  -webkit-animation: sunlight 3s infinite alternate;
+          animation: sunlight 3s infinite alternate;
+}
+
+body #earthorbit {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+
+body #earthorbit #earth {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  margin-top: -37.5px;
+  margin-left: -37.5px;
+  -webkit-animation: spin 5s linear infinite;
+          animation: spin 5s linear infinite;
+}
+
+body #earthorbit #moonorbit {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -62.5px;
+  margin-left: -62.5px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+body #earthorbit #moonorbit #moon {
+  background: radial-gradient(#ddd, #888);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+  -webkit-animation: moonlight 3s infinite alternate;
+          animation: moonlight 3s infinite alternate;
+}
+
+@-webkit-keyframes sunlight {
+  from {
+    -webkit-box-shadow: 0 0 45px #f5c91a;
+            box-shadow: 0 0 45px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 90px #f5c91a;
+            box-shadow: 0 0 90px #f5c91a;
+  }
+}
+
+@keyframes sunlight {
+  from {
+    -webkit-box-shadow: 0 0 45px #f5c91a;
+            box-shadow: 0 0 45px #f5c91a;
+  }
+  to {
+    -webkit-box-shadow: 0 0 90px #f5c91a;
+            box-shadow: 0 0 90px #f5c91a;
+  }
+}
+
+@-webkit-keyframes moonlight {
+  from {
+    -webkit-box-shadow: 0 0 45px #888;
+            box-shadow: 0 0 45px #888;
+  }
+  to {
+    -webkit-box-shadow: 0 0 900px #888;
+            box-shadow: 0 0 900px #888;
+  }
+}
+
+@keyframes moonlight {
+  from {
+    -webkit-box-shadow: 0 0 45px #888;
+            box-shadow: 0 0 45px #888;
+  }
+  to {
+    -webkit-box-shadow: 0 0 900px #888;
+            box-shadow: 0 0 900px #888;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
